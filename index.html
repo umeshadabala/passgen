@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WEB PASSWORD GENERATOR</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="brython()">
+    <script src="brython.js"></script>
+     <script src="brython_stdlib.js"></script>
+    <button id="btn">password_is</button>
+  </body>
+<script type="text/python">
+from password import *
+from browser import document
+import random
+chars ='abcdefghijklmnopqrstuvwxyz1234567890@#$*!?();:/'
+length =input('password length ?')
+length=int(length)
+password=''
+for c in range(length):
+    password +=random.choice(chars)
+document <= password
+</script>
+</html>
